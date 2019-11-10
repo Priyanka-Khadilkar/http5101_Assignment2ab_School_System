@@ -18,6 +18,18 @@ textarea {
     max-width: 280px;
 }
 
+.margintop{
+    margin-top : 20px;
+}
+
+.floatleft{
+    float : left;
+}
+
+.floatright{
+    float: right;
+    /*position : absolute;*/
+}
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
@@ -29,3 +41,5 @@ textarea {
         padding: 0;
     }
 }
+
+
