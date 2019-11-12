@@ -34,7 +34,7 @@ namespace Http5101_Assignment2ab_School_System.Teacher
                     try
                     {
                         //My SQL query to fetch data from db
-                        using (MySqlCommand cmd = new MySqlCommand("SELECT * FROM teachers where TEACHERID=" + Teacher_Id))
+                        using (MySqlCommand cmd = new MySqlCommand("SELECT * FROM TEACHERS where TEACHERID=" + Teacher_Id))
                         {
                             using (MySqlDataAdapter da = new MySqlDataAdapter())
                             {
