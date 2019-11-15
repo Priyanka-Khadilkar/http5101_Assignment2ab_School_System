@@ -1,7 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ListTeachers.aspx.cs" Inherits="Http5101_Assignment2ab_School_System.Teacher.ListTeachers" %>
 
 <asp:Content ID="teachers_list" ContentPlaceHolderID="MainContent" runat="server">
-     <div class="container">
+
+
+    <div class="container">
         <div>
             <h1 class="floatleft">Teachers</h1>
             <asp:Button ID="add_teacher_button" OnClick="add_teacher_button_Click" CssClass="floatright btn btn-dark margintop" runat="server" Text="Add Teacher" />
@@ -28,6 +30,4 @@
             </Columns>
         </asp:GridView>
     </div>
-
-    
 </asp:Content>
