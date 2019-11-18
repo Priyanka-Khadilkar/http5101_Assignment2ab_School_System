@@ -17,51 +17,55 @@ namespace Http5101_Assignment2ab_School_System.Teacher
         {
             if (!this.IsPostBack)
             {
-                string Teacher_Id = "";
-                if (!String.IsNullOrEmpty(Request.QueryString["id"]))
+                bool Valid = true;
+                string Teacher_Id = Request.QueryString["teacherid"];
+                if (String.IsNullOrEmpty(Teacher_Id)) Valid = false;
+
+                //We will attempt to get the record we need
+                if (Valid)
                 {
-                    // Query string value is there so now use it
-                    Teacher_Id = Request.QueryString["id"].ToString();
+                    //Get Connection string value from web.config.
+                    string DB_ConnectionString = ConfigurationManager.ConnectionStrings["default"].ConnectionString;
 
-                }
-
-                //Get Connection string value from web.config.
-                string DB_ConnectionString = ConfigurationManager.ConnectionStrings["default"].ConnectionString;
-
-                //Make a connection to db
-                using (MySqlConnection con = new MySqlConnection(DB_ConnectionString))
-                {
-                    try
+                    //Make a connection to db
+                    using (MySqlConnection con = new MySqlConnection(DB_ConnectionString))
                     {
-                        //My SQL query to fetch data from db
-                        using (MySqlCommand cmd = new MySqlCommand("SELECT * FROM TEACHERS where TEACHERID=" + Teacher_Id))
+                        try
                         {
-                            using (MySqlDataAdapter da = new MySqlDataAdapter())
+                            //My SQL query to fetch data from db
+                            using (MySqlCommand cmd = new MySqlCommand("SELECT * FROM TEACHERS where TEACHERID=" + Teacher_Id))
                             {
-                                cmd.Connection = con;
-                                da.SelectCommand = cmd;
-                                using (DataTable dt = new DataTable())
+                                using (MySqlDataAdapter da = new MySqlDataAdapter())
                                 {
-                                    da.Fill(dt);
-                                    foreach (DataRow row in dt.Rows)
+                                    cmd.Connection = con;
+                                    da.SelectCommand = cmd;
+                                    using (DataTable dt = new DataTable())
                                     {
-                                        //Assign values to label
-                                        teacher_firstname.Text = row["TEACHERFNAME"].ToString();
-                                        teacher_lastname.Text = row["TEACHERLNAME"].ToString();
-                                        teacher_employee_no.Text = row["EMPLOYEENUMBER"].ToString();
-                                        teacher_hire_date.Text = row["HIREDATE"].ToString();
-                                        teacher_salary.Text = row["SALARY"].ToString();
-                                    }
+                                        da.Fill(dt);
+                                        foreach (DataRow row in dt.Rows)
+                                        {
+                                            //Assign values to label
+                                            teacher_firstname.Text = row["TEACHERFNAME"].ToString();
+                                            teacher_lastname.Text = row["TEACHERLNAME"].ToString();
+                                            teacher_employee_no.Text = row["EMPLOYEENUMBER"].ToString();
+                                            teacher_hire_date.Text = row["HIREDATE"].ToString();
+                                            teacher_salary.Text = row["SALARY"].ToString();
+                                        }
 
+                                    }
                                 }
                             }
                         }
+                        catch (Exception ex)
+                        {
+                            Debug.WriteLine("Something went wrong!");
+                            Debug.WriteLine(ex.ToString());
+                        }
                     }
-                    catch (Exception ex)
-                    {
-                        Debug.WriteLine("Something went wrong!");
-                        Debug.WriteLine(ex.ToString());
-                    }
+                }
+                else
+                {
+                    teacher_detail.InnerHtml = "There was an error finding teacher.";
                 }
             }
 

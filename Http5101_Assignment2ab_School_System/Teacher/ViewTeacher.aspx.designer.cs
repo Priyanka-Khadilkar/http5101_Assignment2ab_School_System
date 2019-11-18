@@ -13,6 +13,15 @@ namespace Http5101_Assignment2ab_School_System.Teacher {
     public partial class ViewTeacher {
         
         /// <summary>
+        /// teacher_detail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl teacher_detail;
+        
+        /// <summary>
         /// teacher_firstname control.
         /// </summary>
         /// <remarks>

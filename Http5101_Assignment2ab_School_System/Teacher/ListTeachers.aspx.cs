@@ -67,11 +67,11 @@ namespace Http5101_Assignment2ab_School_System.Teacher
 
             if(e.CommandName == "view_teacher")
             {
-                Response.Redirect("ViewTeacher.aspx?id=" + e.CommandArgument.ToString());
+                Response.Redirect("ViewTeacher.aspx?teacherid=" + e.CommandArgument.ToString());
             }
             else if(e.CommandName == "edit_teacher")
             {
-                Response.Redirect("CreateTeacher.aspx?id=" + e.CommandArgument.ToString());
+                Response.Redirect("CreateTeacher.aspx?teacherid=" + e.CommandArgument.ToString());
             }
 
         }

@@ -17,16 +17,12 @@ namespace Http5101_Assignment2ab_School_System.Teacher
         {
             if (!this.IsPostBack)
             {
-                string Teacher_Id = "";
-                if (!String.IsNullOrEmpty(Request.QueryString["id"]))
-                {
-                    // Query string value is there so now use it
-                    Teacher_Id = Request.QueryString["id"].ToString();
-
-                }
+                bool Valid = true;
+                string Teacher_Id = Request.QueryString["teacherid"];
+                if (String.IsNullOrEmpty(Teacher_Id)) Valid = false;
 
                 //If Querystring has value then pull data for teacher and make page available for Edit Teacher 
-                if (!String.IsNullOrEmpty(Teacher_Id))
+                if (Valid)
                 {
                     page_title.InnerText = "Edit Teacher";
                     //Get Connection string value from web.config.
