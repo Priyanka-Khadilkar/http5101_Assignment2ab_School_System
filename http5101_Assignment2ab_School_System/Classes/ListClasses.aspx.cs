@@ -68,7 +68,7 @@ namespace Http5101_Assignment2ab_School_System.Class
             {
                 Response.Redirect("ViewClass.aspx?id=" + e.CommandArgument.ToString());
             }
-            else if (e.CommandName == "edit_teacher")
+            else if (e.CommandName == "edit_class")
             {
                 Response.Redirect("CreateClass.aspx?id=" + e.CommandArgument.ToString());
             }
