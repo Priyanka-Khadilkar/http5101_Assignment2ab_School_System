@@ -50,7 +50,7 @@ namespace Http5101_Assignment2ab_School_System.Class
                                         Class_Name.Text = row["CLASSNAME"].ToString();
                                         Teacher_Id.Text = row["TEACHERID"].ToString();
                                         Start_Date.Text = row["STARTDATE"].ToString();
-                                        End_Date.Text = row["END_DATE"].ToString();
+                                        End_Date.Text = row["none"].ToString();
                                     }
 
                                 }
@@ -67,14 +67,12 @@ namespace Http5101_Assignment2ab_School_System.Class
 
         }
 
-        /// <summary>
+      
         /// Back button click to redirect list page
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        
         protected void back_btn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("ListTeachers.aspx");
+            Response.Redirect("ListClasses.aspx");
         }
     }
 
