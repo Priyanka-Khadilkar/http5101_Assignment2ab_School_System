@@ -75,7 +75,7 @@ namespace Http5101_Assignment2ab_School_System.Class
 
         protected void Btn_Cancel_Click(object sender, EventArgs e)
         {
-            Response.Redirect("CreateClass.aspx");
+            Response.Redirect("ListClasses.aspx");
         }
     }
 }

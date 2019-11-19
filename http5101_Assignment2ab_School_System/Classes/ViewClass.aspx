@@ -32,5 +32,10 @@
                 <asp:Label ID="End_Date" runat="server"></asp:Label>
             </div>
         </div>
+         <div class="form-group row">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <asp:Button CssClass="btn btn-dark" ID="back_btn" OnClick="back_btn_Click" runat="server" Text="Back" />
+                </div>
+         </div>
     </div>
 </asp:Content>

@@ -91,6 +91,39 @@ footer {
 .col4last {
     margin-right: 0%;
 }
+
+#MainContent_teachers {
+    margin-top: 200px;
+    margin-left: 150px;
+    margin-bottom: 280px;
+}
+
+    #MainContent_teachers:hover {
+        transform: scale(1.2);
+        transition: all .2s ease-in-out;
+    }
+
+#MainContent_classes:hover {
+    transform: scale(1.2);
+    transition: all .2s ease-in-out;
+}
+
+#MainContent_students:hover {
+    transform: scale(1.2);
+    transition: all .2s ease-in-out;
+}
+
+#MainContent_students {
+    margin-bottom: 280px;
+}
+
+#MainContent_classes {
+    margin-bottom: 280px;
+}
+
+.btn btn-dar {
+    margin-right:10px;
+}
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .jumbotron {

@@ -21,7 +21,7 @@ namespace Http5101_Assignment2ab_School_System
 
         protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("Teacher/ListTeachers.aspx");
+            Response.Redirect("Student/ListStudents.aspx");
         }
 
         protected void ImageButton3_Click(object sender, ImageClickEventArgs e)

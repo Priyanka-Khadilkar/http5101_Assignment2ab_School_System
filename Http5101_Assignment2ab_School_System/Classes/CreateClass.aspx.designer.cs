@@ -10,16 +10,25 @@
 namespace Http5101_Assignment2ab_School_System.Class {
     
     
-    public partial class ViewClass {
+    public partial class CreateClass {
         
         /// <summary>
-        /// Class_code control.
+        /// page_title control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Class_code;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl page_title;
+        
+        /// <summary>
+        /// Class_Code control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Class_Code;
         
         /// <summary>
         /// Class_Name control.
@@ -28,7 +37,7 @@ namespace Http5101_Assignment2ab_School_System.Class {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Class_Name;
+        protected global::System.Web.UI.WebControls.TextBox Class_Name;
         
         /// <summary>
         /// Teacher_Id control.
@@ -37,7 +46,7 @@ namespace Http5101_Assignment2ab_School_System.Class {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Teacher_Id;
+        protected global::System.Web.UI.WebControls.TextBox Teacher_Id;
         
         /// <summary>
         /// Start_Date control.
@@ -46,7 +55,7 @@ namespace Http5101_Assignment2ab_School_System.Class {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Start_Date;
+        protected global::System.Web.UI.WebControls.TextBox Start_Date;
         
         /// <summary>
         /// End_Date control.
@@ -55,15 +64,24 @@ namespace Http5101_Assignment2ab_School_System.Class {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label End_Date;
+        protected global::System.Web.UI.WebControls.TextBox End_Date;
         
         /// <summary>
-        /// back_btn control.
+        /// btn_submit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button back_btn;
+        protected global::System.Web.UI.WebControls.Button btn_submit;
+        
+        /// <summary>
+        /// btn_cancel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_cancel;
     }
 }
