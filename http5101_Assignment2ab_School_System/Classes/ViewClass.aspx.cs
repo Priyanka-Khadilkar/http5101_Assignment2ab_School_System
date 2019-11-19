@@ -50,7 +50,7 @@ namespace Http5101_Assignment2ab_School_System.Class
                                         Class_Name.Text = row["CLASSNAME"].ToString();
                                         Teacher_Id.Text = row["TEACHERID"].ToString();
                                         Start_Date.Text = row["STARTDATE"].ToString();
-                                        End_Date.Text = row["none"].ToString();
+                                        End_Date.Text = row["FINISHDATE"].ToString();
                                     }
 
                                 }
