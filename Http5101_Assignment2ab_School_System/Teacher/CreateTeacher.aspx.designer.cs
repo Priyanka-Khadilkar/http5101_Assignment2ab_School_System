@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Http5101_Assignment2ab_School_System.Teacher {
-    
-    
-    public partial class CreateTeacher {
-        
+namespace Http5101_Assignment2ab_School_System.Teacher
+{
+
+
+    public partial class CreateTeacher
+    {
+
         /// <summary>
         /// page_title control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace Http5101_Assignment2ab_School_System.Teacher {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl page_title;
-        
+
         /// <summary>
         /// teacher_firstname control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace Http5101_Assignment2ab_School_System.Teacher {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox teacher_firstname;
-        
+
         /// <summary>
         /// teacher_lastname control.
         /// </summary>
@@ -38,7 +40,7 @@ namespace Http5101_Assignment2ab_School_System.Teacher {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox teacher_lastname;
-        
+
         /// <summary>
         /// teacher_employee_number control.
         /// </summary>
@@ -47,7 +49,7 @@ namespace Http5101_Assignment2ab_School_System.Teacher {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox teacher_employee_number;
-        
+
         /// <summary>
         /// teacher_hire_date control.
         /// </summary>
@@ -56,7 +58,7 @@ namespace Http5101_Assignment2ab_School_System.Teacher {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox teacher_hire_date;
-        
+
         /// <summary>
         /// teacher_salary control.
         /// </summary>
@@ -65,7 +67,7 @@ namespace Http5101_Assignment2ab_School_System.Teacher {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox teacher_salary;
-        
+
         /// <summary>
         /// btn_submit control.
         /// </summary>
@@ -74,7 +76,7 @@ namespace Http5101_Assignment2ab_School_System.Teacher {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btn_submit;
-        
+
         /// <summary>
         /// btn_cancel control.
         /// </summary>

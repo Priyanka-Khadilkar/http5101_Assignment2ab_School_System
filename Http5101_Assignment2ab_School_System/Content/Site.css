@@ -18,45 +18,78 @@ textarea {
     max-width: 280px;
 }
 
-.margintop{
-    margin-top : 20px;
+.margintop {
+    margin-top: 20px;
 }
 
-.floatleft{
-    float : left;
+.floatleft {
+    float: left;
 }
 
-.floatright{
+.floatright {
     float: right;
     /*position : absolute;*/
 }
-#MainContent_teachers{
-    margin-top:200px;
-    margin-left:150px;
-    margin-bottom:280px;
 
+/*GENERAL CSS*/
+.cwidth {
+    max-width: 1080px;
+    margin: 0 auto;
 }
-#MainContent_teachers:hover {
-    transform: scale(1.2);
-    transition: all .2s ease-in-out;
-}
-#MainContent_classes:hover {
-    transform: scale(1.2);
-    transition: all .2s ease-in-out;
-}
-#MainContent_students:hover {
-    transform: scale(1.2);
-    transition: all .2s ease-in-out;
-}
-#MainContent_students {
-    margin-bottom: 280px;
 
+header, footer {
+    background: #b2b2b2;
 }
-#MainContent_classes {
-    margin-bottom: 280px;
+
+header {
+    margin-bottom: 50px;
 }
-.button:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+footer {
+    margin-top: 50px;
+}
+
+
+/*CSS FOR TABLE-LIKE STYLING*/
+#students_result {
+    width: 100%;
+}
+
+.listitem {
+    background: #fefefe;
+    padding: 12px 5%;
+    width: 100%;
+    overflow: hidden;
+}
+
+    .listitem:after {
+        clear: both;
+    }
+
+    .listitem:nth-child(2n) {
+        background: #dedede;
+    }
+
+    .listitem:hover {
+        background: #e9d898;
+    }
+/*
+    sandbox.bittsdevelopment.com/colcalc
+    columns : 4
+    gutter/column ratio : 0.2
+*/
+.col4, .col4last {
+    float: left;
+    width: 21.73%;
+    margin-right: 4.34%;
+}
+
+.btn {
+    margin-right: 10px;
+}
+
+.col4last {
+    margin-right: 0%;
 }
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
@@ -68,5 +101,3 @@ textarea {
         padding: 0;
     }
 }
-
-

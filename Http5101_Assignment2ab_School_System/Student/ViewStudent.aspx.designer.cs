@@ -7,54 +7,56 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Http5101_Assignment2ab_School_System.Student {
-    
-    
-    public partial class ViewStudent {
-        
+namespace Http5101_Assignment2ab_School_System.Student
+{
+
+
+    public partial class ViewStudent
+    {
+
         /// <summary>
-        /// class_code control.
+        /// student control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label class_code;
-        
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl student;
+
         /// <summary>
-        /// Class_Name control.
+        /// student_fname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Class_Name;
-        
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl student_fname;
+
         /// <summary>
-        /// Teacher_Id control.
+        /// student_lname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Teacher_Id;
-        
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl student_lname;
+
         /// <summary>
-        /// Start_Date control.
+        /// student_number control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Start_Date;
-        
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl student_number;
+
         /// <summary>
-        /// End_Date control.
+        /// enrolment_date control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label End_Date;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl enrolment_date;
     }
 }
